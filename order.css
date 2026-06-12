@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: #eae7e2;
+    color: #2b2b2b;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.order-section {
+    width: 100%;
+    max-width: 550px; /* Caja más angosta y elegante */
+}
+
+.order-box {
+    background-color: #f4f1ea;
+    padding: 50px 40px;
+    border-radius: 4px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.order-box h2 {
+    font-family: Georgia, serif;
+    font-size: 2.2rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.order-subtitle {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 35px;
+}
+
+/* Inputs del Formulario */
+.input-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-size: 0.95rem;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus {
+    border-color: #8b8579; /* Color de enfoque sutil */
+}
+
+/* Botón Ovalado Minimalista parecido al "MENU" de tu pantalla */
+.btn-order {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #2b2b2b;
+    color: #f4f1ea;
+    border: none;
+    border-radius: 25px; /* Hace el botón ovalado */
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background-color 0.3s;
+}
+
+.btn-order:hover {
+    background-color: #4a4a4a;
+}
+
+/* --- RESPONSIVE (Celular) --- */
+@media (max-width: 480px) {
+    .order-box {
+        padding: 35px 20px;
+    }
+    
+    .order-box h2 {
+        font-size: 1.8rem;
+    }
+}

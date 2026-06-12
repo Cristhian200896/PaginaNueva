@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Semilla - Join the Team</title>
+    <link rel="stylesheet" href="../estilos/work.css">
+</head>
+<body>
+
+    <section class="work-section">
+        <div class="work-container">
+            <span class="subtitle">ÚNETE A NUESTRO EQUIPO</span>
+            <h2>Crecemos Juntos</h2>
+            <p>En La Semilla, buscamos personas apasionadas por la hospitalidad, la creatividad culinaria y la sustentabilidad. Si quieres formar parte de una propuesta dinámica y con un gran ambiente laboral, nos encantaría conocerte.</p>
+            
+            <div class="positions-list">
+                <h3>Puestos Abiertos</h3>
+                
+                <div class="position-item">
+                    <span class="role">Cocinero de Línea / Producción</span>
+                    <span class="type">Tiempo Completo</span>
+                </div>
+
+                <div class="position-item">
+                    <span class="role">Personal de Sala / Servicio</span>
+                    <span class="type">Tiempo Completo / Parcial</span>
+                </div>
+
+                <div class="position-item">
+                    <span class="role">Bartender Profesional</span>
+                    <span class="type">Tiempo Completo</span>
+                </div>
+            </div>
+
+            <p class="apply-text">Envíanos tu portafolio o CV actualizado directamente a nuestro correo de contacto:</p>
+            <a href="mailto:talento@lasemilla.com" class="email-link">talento@lasemilla.com</a>
+        </div>
+    </section>
+
+    <script>
+        if (performance.navigation.type === performance.navigation.TYPE_RELOAD) {
+            window.location.href = "paginaNueva.html";
+        }
+    </script>
+
+    <script>
+    document.querySelector('form').addEventListener('submit', function(e) {
+        e.preventDefault(); // Evita que la página se recargue
+        alert('¡Reserva solicitada con éxito!');
+    });
+    </script>
+
+</body>
+</html>

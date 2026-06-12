@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: #eae7e2;
+    color: #2b2b2b;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.press-section {
+    max-width: 1100px;
+    width: 100%;
+}
+
+.press-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.press-header span {
+    font-size: 0.8rem;
+    letter-spacing: 4px;
+    color: #8b8579;
+}
+
+.press-header h2 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    font-family: Georgia, serif;
+    margin-top: 10px;
+}
+
+/* Grid para Computadora (3 columnas) */
+.press-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.press-card {
+    background-color: #f4f1ea;
+    padding: 40px 30px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+    transition: transform 0.3s ease;
+}
+
+.press-card:hover {
+    transform: translateY(-5px);
+}
+
+.press-card .quote {
+    font-style: italic;
+    font-family: Georgia, serif;
+    line-height: 1.6;
+    color: #444;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.press-card .source {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    color: #8b8579;
+}
+
+/* --- RESPONSIVE (Celular) --- */
+@media (max-width: 900px) {
+    /* Cambia a 1 sola columna en pantallas medianas/chicas */
+    .press-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .press-header h2 {
+        font-size: 2rem;
+    }
+}

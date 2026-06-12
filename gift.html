@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Semilla - Gift Cards</title>
+    <link rel="stylesheet" href="../estilos/gift.css">
+</head>
+<body>
+
+    <section class="gift-section">
+        <div class="gift-header">
+            <span>REGALA LA SEMILLA</span>
+            <h2>Tarjetas de Regalo</h2>
+            <p>Comparte momentos inolvidables en torno a la cocina moderna latina.</p>
+        </div>
+
+        <div class="gift-options">
+            <div class="gift-card-box">
+                <div class="card-preview digital">
+                    <span class="card-logo">la semilla</span>
+                    <span class="card-type">DIGITAL</span>
+                </div>
+                <h3>Tarjeta Virtual</h3>
+                <p>Enviada instantáneamente por correo electrónico con una nota personalizada.</p>
+                <button class="btn-gift">COMPRAR E-GIFT</button>
+            </div>
+
+            <div class="gift-card-box">
+                <div class="card-preview physical">
+                    <span class="card-logo">la semilla</span>
+                    <span class="card-type">FÍSICA</span>
+                </div>
+                <h3>Edición Impresa</h3>
+                <p>Una hermosa tarjeta texturizada presentada en un sobre minimalista listo para entregar.</p>
+                <button class="btn-gift">SOLICITAR TARJETA</button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        if (performance.navigation.type === performance.navigation.TYPE_RELOAD) {
+            window.location.href = "paginaNueva.html";
+        }
+    </script>
+
+    <script>
+    document.querySelector('form').addEventListener('submit', function(e) {
+        e.preventDefault(); // Evita que la página se recargue
+        alert('¡Reserva solicitada con éxito!');
+    });
+    </script>
+
+</body>
+</html>

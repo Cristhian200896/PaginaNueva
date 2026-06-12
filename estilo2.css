@@ -1,0 +1,132 @@
+/* ==========================================================================
+   RESET & CONFIGURACIÓN BASE (ESTILO2.CSS)
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #bfa15f; /* Fondo mostaza de la captura original */
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* ==========================================================================
+   ESTILOS DE LA PÁGINA DE MENÚ COMPLETO (SIGUIENTE.HTML)
+   ========================================================================== */
+.menu-page-wrapper {
+    width: 100%;
+    padding: 60px 40px;
+    position: relative;
+}
+
+/* Botón X para regresar a paginaNueva.html */
+.btn-close-menu {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    text-decoration: none;
+    font-size: 45px;
+    color: #ffffff;
+    font-weight: 300;
+    transition: transform 0.2s;
+}
+
+.btn-close-menu:hover {
+    transform: scale(1.1);
+}
+
+/* Contenedor central del contenido */
+.menu-overlay-content {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Encabezado: Texto MENU + Hojas decorativas */
+.menu-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 15px;
+}
+
+.menu-overlay-title {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    color: #1a1a1a;
+}
+
+.leaf-deco { 
+    font-size: 35px; 
+}
+
+/* ==========================================================================
+   CUADRÍCULA DE LAS 6 HOJAS DE PAPEL DEL MENÚ (GRID)
+   ========================================================================== */
+.menu-pages-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas en computadoras */
+    gap: 30px;
+}
+
+/* Cada hoja blanca individual */
+.menu-page-card {
+    background-color: #ffffff;
+    aspect-ratio: 1 / 1.4; /* Simula la forma vertical de una hoja A4 */
+    padding: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    border: 8px double #e0d5be; /* Borde doble decorativo */
+}
+
+.menu-page-mockup {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #4a3b2c;
+}
+
+/* Detalles internos de la Hoja de Portada */
+.cover-page { 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+}
+
+.mock-sun { 
+    font-size: 20px; 
+    color: #bfa15f; 
+    margin-bottom: 10px; 
+}
+
+.mock-title { 
+    font-family: 'Playfair Display', serif; 
+    font-size: 22px; 
+    font-style: italic; 
+}
+
+.mock-meta { 
+    font-size: 8px; 
+    color: #888; 
+}
+
+/* Detalles internos de las hojas de platos/bebidas */
+.text-page h4 { 
+    font-size: 11px; 
+    text-transform: uppercase; 
+    margin-top: 15px; 
+    color: #bfa15f; 
+}
+
+.mock-line { 
+    width: 100%; 
+    height: 2px; 
+    background-color: #f5f5f5;
+}

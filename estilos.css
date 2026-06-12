@@ -1,0 +1,242 @@
+/* ==========================================================================
+   RESET & ESTILOS GLOBALES
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4; /* Fondo exterior gris claro */
+    min-height: 100vh;
+}
+
+/* Contenedor tipo "maqueta" o tarjeta central idéntico a la captura */
+.container {
+    width: 100%;
+}
+
+/* ==========================================================================
+   SECCIÓN SUPERIOR (BEIGE)
+   ========================================================================== */
+.top-section {
+    background-color: #f3edd8; /* El tono beige exacto */
+    padding: 30px 40px 50px 40px;
+    position: relative;
+}
+
+/* Navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+.nav-left a, .nav-right a {
+    text-decoration: none;
+    color: #1a1a1a;
+    margin: 0 15px;
+    transition: opacity 0.3s;
+}
+
+.nav-left a:first-child { margin-left: 0; }
+.nav-right a:last-child { margin-right: 0; }
+
+.nav-logo-top {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+/* Contenido Principal con textos laterales */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+/* Textos Verticales a los lados */
+.vertical-text {
+    font-family: 'Courier Prime', monospace;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #1a1a1a;
+    text-align: center;
+    line-height: 1.2;
+    width: 30px;
+}
+
+/* Cuadrícula de Imagen y Texto del Restaurante */
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    width: calc(100% - 100px); /* Deja espacio para los textos verticales */
+    margin: 0 auto;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-info {
+    text-align: center;
+    padding: 0 10px;
+}
+
+.sun-icon {
+    font-size: 20px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.brand-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 400;
+    font-style: italic;
+    color: #1a1a1a;
+    margin-bottom: 5px;
+}
+
+.brand-subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+}
+
+.brand-description {
+    font-size: 9px;
+    letter-spacing: 2px;
+    line-height: 1.8;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 25px;
+    padding: 0 20px;
+}
+
+/* Botón Menú */
+.btn-menu {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #cbd4c2; /* Color verde seco clarito */
+    color: #1a1a1a;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 8px 25px;
+    border-radius: 20px;
+    transition: background 0.3s;
+}
+
+.btn-menu:hover {
+    background-color: #b5c0ab;
+}
+
+/* ==========================================================================
+   SECCIÓN INFERIOR (VERDE SALVIA)
+   ========================================================================== */
+.bottom-section {
+    background-color: #cbd4c2; /* Color verde salvia exacto */
+    padding: 50px 60px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr; /* Desproporción para imitar el diseño */
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+/* Estilos de los párrafos inferiores */
+.footer-text {
+    font-size: 10px;
+    line-height: 1.8;
+    color: #2b2b2b;
+    letter-spacing: 0.5px;
+}
+
+.footer-text p {
+    margin-bottom: 15px;
+}
+
+.footer-text .highlight-text {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.footer-text .enjoy-text {
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+/* Botón Rojo "Book Now Resy" */
+.btn-book {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    background-color: #ff3b30; /* Rojo vivo */
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    transition: transform 0.2s;
+}
+
+.btn-book:hover {
+    transform: scale(1.03);
+}
+
+.resy-tag {
+    font-size: 8px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 2px 4px;
+    margin-left: 8px;
+    border-radius: 2px;
+}
+
+/* RESPONSIVE: Para que se vea bien en celulares si achicas la pantalla */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .vertical-text {
+        display: none; /* Escondemos el texto vertical en pantallas chicas */
+    }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Semilla - Order</title>
+    <link rel="stylesheet" href="../estilos/order.css">
+</head>
+<body>
+
+    <section class="order-section">
+        <div class="order-box">
+            <h2>Haz tu Pedido</h2>
+            <p class="order-subtitle">Disfruta de la experiencia moderna latina en casa.</p>
+            
+            <form>
+                <div class="input-group">
+                    <label for="name">Nombre Completo</label>
+                    <input type="text" id="name" placeholder="Tu nombre" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="type">Tipo de Pedido</label>
+                    <select id="type">
+                        <option value="pickup">Recojo en Tienda</option>
+                        <option value="delivery">Delivery</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="notes">Notas o Alergias</label>
+                    <textarea id="notes" rows="3" placeholder="Ej. sin picante, alérgico a las nueces..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-order">CONTINUAR AL MENÚ</button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        if (performance.navigation.type === performance.navigation.TYPE_RELOAD) {
+            window.location.href = "paginaNueva.html";
+        }
+    </script>
+
+</body>
+</html>
